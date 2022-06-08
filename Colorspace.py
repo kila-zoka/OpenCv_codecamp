@@ -15,5 +15,6 @@ def rescale(frame, scale=0.2):
 
 resized_img = rescale(pic)
 cv.imshow('Resized image', resized_img)
+cv.imwrite('org_img.png', resized_img)
 
 cv.waitKey(0)
